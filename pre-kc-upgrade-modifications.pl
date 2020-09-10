@@ -82,6 +82,9 @@ sub dropUnusedTables {
 sub dropUnusedColumns {
 
     $dbh->do("ALTER TABLE message_queue DROP COLUMN delivery_note");
+
+    $dbh->do("ALTER TABLE items DROP COLUMN datereceived");
+
 }
 
 # Re-creates tables Koha-Suomi fork dropped from KC schema
