@@ -27,7 +27,7 @@ $dbh->{RaiseError} = 1;
 sub deleteUnneededData {
     my @tables_to_truncate = (
         "atomicupdates",
-
+        "plugin_methods",
         # "action_logs_cache", # needs to be preserved for statistics
         "api_keys",
     );
